@@ -11,7 +11,7 @@ class Thru < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/samsungplay/Thruflux/releases/download/v0.1.1/thru_v0.1.1_darwin_amd64.tar.gz"
-      sha256 "fcb598d581b2828d17cd498e2c75b4d499d41d57c38b1688a11788fa68016b1b"
+      sha256 "dc27c27d0df11715c718eebdae10f82938eb1d9d2cbed47cdfaf88fffe866f3e"
 
       def install
         bin.install "thru"
@@ -19,7 +19,7 @@ class Thru < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/samsungplay/Thruflux/releases/download/v0.1.1/thru_v0.1.1_darwin_arm64.tar.gz"
-      sha256 "c8fd1748f1ff0a217131a4f942a89c1ef5c2bfd54b6203cd1c37c41b733f37b1"
+      sha256 "ce756d485644ff8b3916fada0c6e9aaec7476b45674e2206f8f04d2c1bd18b73"
 
       def install
         bin.install "thru"
@@ -30,14 +30,14 @@ class Thru < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/samsungplay/Thruflux/releases/download/v0.1.1/thru_v0.1.1_linux_amd64.tar.gz"
-      sha256 "c29d0b6637369bf03eaf3b7eb998608c9375d26126485da67cfb0b9fee07f8c5"
+      sha256 "a138db488430b7a2600bd343310de12152b941aa2e60783dd4415346c0392342"
       def install
         bin.install "thru"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/samsungplay/Thruflux/releases/download/v0.1.1/thru_v0.1.1_linux_arm64.tar.gz"
-      sha256 "b1681dda54d4c332b871a1c52f83f958d14eca6e6c8e164489bf211f1615f595"
+      sha256 "b5c2638a0891c1d52a59814d1b4340c89a681843f14e49e92eecb9b7f2823e02"
       def install
         bin.install "thru"
       end
