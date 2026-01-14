@@ -5,21 +5,21 @@
 class Thru < Formula
   desc "Pure throughput. Zero friction."
   homepage "https://github.com/samsungplay/thruflux"
-  version "0.1"
+  version "0.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/samsungplay/Thruflux/releases/download/v0.1/thru_v0.1_darwin_amd64.tar.gz"
-      sha256 "22944e3e4ee326e9e618a870520297a308227d0cf056f78d8f148b33170e7f4d"
+      url "https://github.com/samsungplay/Thruflux/releases/download/v0.1.0/thru_v0.1.0_darwin_amd64.tar.gz"
+      sha256 "491e28aa57f96a295cd832c541d7b0d841e9467dd231cd238820a53f59fe52cd"
 
       def install
         bin.install "thru"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/samsungplay/Thruflux/releases/download/v0.1/thru_v0.1_darwin_arm64.tar.gz"
-      sha256 "5862a8a2ca03a820a8d825d75352deb17d4f914c33d6175a561408d827c3676e"
+      url "https://github.com/samsungplay/Thruflux/releases/download/v0.1.0/thru_v0.1.0_darwin_arm64.tar.gz"
+      sha256 "6dea1f4135b14485244353ad105b6965ba95c17c32b2275fcd3204456b461b6e"
 
       def install
         bin.install "thru"
@@ -29,15 +29,15 @@ class Thru < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/samsungplay/Thruflux/releases/download/v0.1/thru_v0.1_linux_amd64.tar.gz"
-      sha256 "1ceff048e0e0e717db5ce902d26a5734da190d4c4722873370246f9c03b2ff14"
+      url "https://github.com/samsungplay/Thruflux/releases/download/v0.1.0/thru_v0.1.0_linux_amd64.tar.gz"
+      sha256 "890d898f0263f5153c01b1579eca1e66202f2e43a8fecb0eecc9616218b0bd8a"
       def install
         bin.install "thru"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/samsungplay/Thruflux/releases/download/v0.1/thru_v0.1_linux_arm64.tar.gz"
-      sha256 "96020aaa32981d3ded5206705e2e862b1fa42349d6128a69fcebfbbe5f667fb5"
+      url "https://github.com/samsungplay/Thruflux/releases/download/v0.1.0/thru_v0.1.0_linux_arm64.tar.gz"
+      sha256 "cc60cf8abbb285aa3271bc3db270f8b2c8eed52d10c9fcd37606ac888937bd1e"
       def install
         bin.install "thru"
       end
