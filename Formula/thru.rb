@@ -5,21 +5,21 @@
 class Thru < Formula
   desc "Pure throughput. Zero friction."
   homepage "https://github.com/samsungplay/thruflux"
-  version "0.1.2"
+  version "0.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/samsungplay/Thruflux/releases/download/v0.1.2/thru_v0.1.2_darwin_amd64.tar.gz"
-      sha256 "fb292dd5b9d92717f07b961f9190157d42e20b0e1aace6604f6c0a3221f751be"
+      url "https://github.com/samsungplay/Thruflux/releases/download/v0.1.0/thru_v0.1.0_darwin_amd64.tar.gz"
+      sha256 "97bbb7683bdf208153a00eaff7e21411a30c2ca33d80bad2eebf6eb65e2070b5"
 
       def install
         bin.install "thru"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/samsungplay/Thruflux/releases/download/v0.1.2/thru_v0.1.2_darwin_arm64.tar.gz"
-      sha256 "252e62589f2597e497461aaded64ef663d0da3ed1823300a9f96027a0f3bdf62"
+      url "https://github.com/samsungplay/Thruflux/releases/download/v0.1.0/thru_v0.1.0_darwin_arm64.tar.gz"
+      sha256 "6b31db5f597b2bb8a8eee15bc60b89420ccee19a07f59639d2637450484adbc6"
 
       def install
         bin.install "thru"
@@ -29,15 +29,15 @@ class Thru < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/samsungplay/Thruflux/releases/download/v0.1.2/thru_v0.1.2_linux_amd64.tar.gz"
-      sha256 "3f9f3b54c29d6b2967e2e58de478d2063c4ee9ac1bcb42ba40d27067791843a4"
+      url "https://github.com/samsungplay/Thruflux/releases/download/v0.1.0/thru_v0.1.0_linux_amd64.tar.gz"
+      sha256 "78d5e41867e1f204de2b90b7290d4dfbb4358513127005fded74f6bc78c264a7"
       def install
         bin.install "thru"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/samsungplay/Thruflux/releases/download/v0.1.2/thru_v0.1.2_linux_arm64.tar.gz"
-      sha256 "1467332429fd1bc59a72926e5274495834fc7851af6d3d7824c2543f63f468e4"
+      url "https://github.com/samsungplay/Thruflux/releases/download/v0.1.0/thru_v0.1.0_linux_arm64.tar.gz"
+      sha256 "7faa9529ccf7cae70f6c9627760a02c7b8325dba999b65c7191f00dabce3c038"
       def install
         bin.install "thru"
       end
